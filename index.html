@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Subhadip Mandal - Personal Website</title>
+
+<style>
+
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#eef2f3;
+}
+
+header{
+background:#1f3c88;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+header img{
+width:120px;
+height:120px;
+border-radius:50%;
+border:4px solid white;
+margin-top:10px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2{
+color:#1f3c88;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.gallery div{
+background:#ddd;
+padding:40px;
+text-align:center;
+border-radius:8px;
+}
+
+button{
+background:#1f3c88;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:6px;
+cursor:pointer;
+}
+
+footer{
+text-align:center;
+padding:15px;
+background:#1f3c88;
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Subhadip Mandal</h1>
+<p>Science Student | JEE Main Aspirant</p>
+
+<!-- এখানে আপনার photo দিতে পারবেন -->
+<img src="profile.jpg">
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>About Me</h2>
+
+<p>
+Hello! My name is Subhadip Mandal. I am a science student preparing for the Joint Entrance Examination Main. 
+I enjoy learning technology, building DIY electronics projects and creating crafts.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>My Hobbies & Skills</h2>
+
+<ul>
+<li>Craft & Keychain Making</li>
+<li>Photo Editing</li>
+<li>DIY Electronics Projects</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>My Projects / Work</h2>
+
+<div class="gallery">
+
+<div>Keychain Craft</div>
+
+<div>Photo Editing</div>
+
+<div>Electronics Project</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Contact</h2>
+
+<p>Email: subhadipmandal900@gmail.com</p>
+
+<button onclick="window.location.href='mailto:subhadipmandal900@gmail.com'">
+Send Email
+</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 Subhadip Mandal</p>
+
+</footer>
+
+</body>
+</html>
