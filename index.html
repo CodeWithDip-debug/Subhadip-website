@@ -81,9 +81,36 @@ cursor:pointer;
 
 <body>
 
-<h2>My Photo</h2>
+<div class="hero">
+    <img src="  IMG-20260409-WA0002.jpg" alt="Technology Background">
+    <div class="hero-text">Next Gen Promo</div>
+</div>
 
-<img src="IMG-20260409-WA0002.jpg" alt="Technology Image" width="100%">
+<style>
+.hero{
+  position: relative;
+  text-align: center;
+}
+
+.hero img{
+  width: 100%;
+  height: auto;
+}
+
+.hero-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  background: rgba(0,0,0,0.4);
+  padding: 10px 25px;
+  border-radius: 8px;
+  letter-spacing: 2px;
+}
+</style>
 
 </body>
 </html>
