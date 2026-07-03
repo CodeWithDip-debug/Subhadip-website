@@ -5,53 +5,124 @@
     box-sizing:border-box;
 }
 
-/* Body */
 body{
-    width:100%;
-    min-height:100vh;
-    background:#0b0b0b;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    background:#000;
+    color:#fff;
+    font-family:Arial,sans-serif;
     overflow:hidden;
-    font-family:Arial, sans-serif;
 }
 
 /* Intro Screen */
 #intro{
-    width:100%;
-    text-align:center;
+    position:fixed;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#000;
+    z-index:9999;
+}
+
+/* Golden Glow */
+#glow{
+    position:absolute;
+    bottom:0;
+    width:400px;
+    height:120px;
+    background:radial-gradient(circle,#FFD700 0%,rgba(255,215,0,.35) 40%,transparent 80%);
+    filter:blur(25px);
 }
 
 /* Logo */
 #logo{
-    width:280px;
-    max-width:80%;
-    height:auto;
-    display:block;
-    margin:0 auto 25px;
-    object-fit:contain;
+    width:220px;
+    max-width:70vw;
+    z-index:2;
 }
-/* Welcome */
+
+/* Text */
 #welcome{
-    color:#ffffff;
-    font-size:24px;
-    margin-top:20px;
-    font-weight:400;
+    margin-top:25px;
+    font-size:34px;
+    color:#fff;
 }
 
-/* Brand */
 #brand{
+    margin-top:10px;
+    font-size:60px;
     color:#d62828;
-    font-size:48px;
-    margin-top:8px;
-    font-weight:700;
+    font-weight:bold;
 }
 
-/* Tagline */
 #tagline{
+    margin-top:15px;
+    font-size:20px;
     color:#d4af37;
-    font-size:18px;
-    margin-top:12px;
-    letter-spacing:2px;
+    letter-spacing:3px;
+}
+
+/* Home Page */
+#homepage{
+    display:none;
+    min-height:100vh;
+    background:#0b0b0b;
+}
+
+header{
+    height:80px;
+    display:flex;
+    align-items:center;
+    padding:20px 40px;
+    background:#111;
+}
+
+#navLogo{
+    width:55px;
+    margin-right:15px;
+}
+
+.hero{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:calc(100vh - 80px);
+    text-align:center;
+}
+
+.hero h1{
+    font-size:55px;
+    color:#fff;
+}
+
+.hero p{
+    margin-top:20px;
+    color:#d4af37;
+    font-size:22px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+#logo{
+width:170px;
+}
+
+#welcome{
+font-size:24px;
+}
+
+#brand{
+font-size:42px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:18px;
+}
+
 }
