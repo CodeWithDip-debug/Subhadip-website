@@ -25,10 +25,13 @@ body{
 
 /* Logo */
 #logo{
-    width:170px;
-    max-width:45vw;
+    width:280px;
+    max-width:80%;
+    height:auto;
+    display:block;
+    margin:0 auto 25px;
+    object-fit:contain;
 }
-
 /* Welcome */
 #welcome{
     color:#ffffff;
